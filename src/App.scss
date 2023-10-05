@@ -1,0 +1,9 @@
+.App {
+  .main-layout {
+    margin-left: 240px;
+
+    @media (max-width: 1400px) {
+      margin-left: 0;
+    }
+  }
+}

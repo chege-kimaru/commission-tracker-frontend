@@ -1,0 +1,11 @@
+.Navbar {
+    .menu-btn {
+        @media (min-width: 1400px) {
+            display: none;
+        }
+    }
+
+    .dropdown-menu {
+        position: absolute;
+    }
+}

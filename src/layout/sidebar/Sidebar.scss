@@ -1,0 +1,44 @@
+.sidebar-overlay {
+  position: fixed;
+  //   top: 64px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+
+  @media (max-width: 1980px) {
+    &.sidebar-overlay-show {
+      display: block;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  //   top: 64px;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 2;
+  transition: all 300ms;
+
+  &.sidebar-show {
+    box-shadow: none;
+  }
+
+  @media (max-width: 1400px) {
+    left: -240px;
+
+    &.sidebar-show {
+      left: 0;
+      box-shadow: 5px 5px 20px -5px rgb(230 230 230);
+    }
+  }
+}
+
+i {
+  width: 16px;
+}

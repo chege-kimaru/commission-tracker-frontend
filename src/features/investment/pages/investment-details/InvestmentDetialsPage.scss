@@ -1,0 +1,17 @@
+.InvestmentDetailsPage {
+    .stat {
+        min-width: 250px;
+    }
+
+    .fs-7 {
+        font-size: 12px;
+    }
+
+    @media (max-width: 893px) {
+        .stat {
+            min-width: 100%;
+            margin-top: 1rem !important;
+            margin-left: 0 !important;
+        }
+    }
+}

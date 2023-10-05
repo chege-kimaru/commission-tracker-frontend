@@ -1,15 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import { App } from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import { StoreContext, store } from "./stores/store";
+
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <StoreContext.Provider value={store}>
+      <Router>
+        <App />
+      </Router>
+    </StoreContext.Provider>
   </React.StrictMode>
 );
 
