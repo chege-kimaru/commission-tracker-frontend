@@ -15,7 +15,7 @@ export const AuthPage = () => {
       setAuthFailed(true);
       setLoading(false);
     }
-  }, []);
+  }, [window.location.search]);
 
   return isLoading ? (
     <div>Authenticating...</div>
